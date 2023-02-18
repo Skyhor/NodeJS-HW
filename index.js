@@ -16,10 +16,8 @@ program
 
 program.parse(process.argv);
 
-// index.js
 const argv = program.opts();
 
-// TODO: рефакторить
 function invokeAction({ action, id, name, email, phone }) {
   switch (action) {
     case "list":
